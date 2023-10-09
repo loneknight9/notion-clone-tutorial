@@ -1,3 +1,4 @@
+import { Toaster } from "sonner";
 import { ThemeProvider } from '@/components/providers/theme-provider'
 import './globals.css'
 import type { Metadata } from 'next'
@@ -41,6 +42,7 @@ export default function RootLayout({
             disableTransitionOnChange
             storageKey="jotion-theme-2"
           >
+            <Toaster position="bottom-center" />
             {children}
           </ThemeProvider>
         </ConvexClientProvider>
